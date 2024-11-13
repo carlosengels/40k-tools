@@ -1,10 +1,5 @@
 import random
 
-# 6 Eradicators + Apoth. B. into Transcendent CTan
-# 4x metla rifle
-# 2x multi-melta
-# re re-reolling hit/wound/damage
-
 def rollDice():
     roll = random.randint(1, 6)
     return roll
@@ -65,10 +60,3 @@ def calculateDamage(shots, strength, ballisticSkill, toughness, save):
 
     print("Total Damage:" +  str(damage))
     return damage
-
-# no re roll yet
-print("4x Melta rifles into Ctan")
-calculateDamage(4, 9, 3, 11, 4)
-
-print("2x Multi-melta into Ctan")
-calculateDamage(4, 9, 4, 11, 4)  
